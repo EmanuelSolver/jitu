@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Assignment on forms</h2>
+    <form action="#">
+        <label for="client">client</label><br>
+            <input id="client" type="text" maxlength="12"><br><br>
+        <label for="age">Age</label><br>
+            <input id="age" type="number" min="18" max="35"><br><br>
+        <label for="moile">Phone_No</label><br>
+            <input id="mobile" type="tel" minlength="10" placeholder="+254..."><br><br>
+        <label for="gender">Gender</label><br>
+            <input name="gender" type="radio">Male
+            <input name="gender" type="radio">Female
+            <input name="gender" type="radio">Other
+        <br><br>
+        <label for="country">Country</label><br>
+        <select name="country" id="country">
+            <option value="kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+        </select>
+        <br><br>
+        <label for="pass">Set Password</label><br>
+            <input id="pass" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="must contain 6 or more characters and alphanumerics">
+        <br><br>
+        <label for="company">Working Company</label><br>
+            <input type="checkbox">Jitu
+            <input type="checkbox">Microsoft
+            <input type="checkbox">Google
+        <br><br>
+        <label for="about">Tell us about yourself</label><br>
+            <textarea name="about" id="about" cols="30" rows="7" placeholder="I'm one of the..."></textarea>
+          
+        <br><br>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
